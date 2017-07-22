@@ -6,7 +6,7 @@ import { selectNewActivity, deleteActivity, addToFavorites, deleteFromFavorites 
 const mapStateToProps = (state) => {
 
   return {
-    activity: state.activity
+    activity: state.selectNewActivityReducer
   }
 }
 
