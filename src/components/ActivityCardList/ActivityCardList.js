@@ -4,14 +4,18 @@ import ActivityCard from '../ActivityCard/ActivityCard'
 import { results } from '../../dataSet/myData';
 
 
-const ActivityCardList = (results) =>  {
+const ActivityCardList = (props) =>  {
+   let cards = results.map((card) => {
+     return <ActivityCard key={card.id}
+                          id={card.id}
+                          title={card.title}
+                          description={card.description}
+                        />
 
-  
+   });
 
-  console.log(results);
-
-  return (
-
+   return (
+    {cards}
   )
 }
 export default ActivityCardList;

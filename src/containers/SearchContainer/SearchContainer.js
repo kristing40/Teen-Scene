@@ -7,7 +7,6 @@ const mapStateToProps = (state) => {
 
   return {
     selectNewActivity: state.selectNewActivityReducer,
-    deleteActivity: state.deleteActivityReducer,
     addToFavorites: state.addToFavoritesReducer,
     deleteFromFavorites: state.deleteFromFavoritesReducer,
   }

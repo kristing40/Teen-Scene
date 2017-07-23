@@ -1,11 +1,12 @@
 import { connect } from 'react-redux';
-import { addToFavorites, deleteActivity, deleteFromFavorites } from '../../actions/actions';
+import { selectNewActivity, addToFavorites, deleteActivity, deleteFromFavorites } from '../../actions/actions';
 import ActivityCardList from '../../components/ActivityCardList/ActivityCardList';
 
 
 const mapStateToProps = (state) => {
-
+  // console.log(state);
   return {
+    arrayOfActivities: state.activity,
     deleteCard: state.id,
     deleteFavorite: state.id,
     addFavorite: state.id
@@ -13,9 +14,10 @@ const mapStateToProps = (state) => {
 }
 
 const mapDispatchToProps = (dispatch) => {
-
+  // console.log(dispatch);
   return {
-    deleteActivity: (id) => dispatch((deleteActivity(id)),
+    selectNewActivities: (id) => dispatch(selectNewActivity(id)),
+    deleteActivity: (id) => dispatch(deleteActivity(id)),
     addToFavorites: (id) => dispatch(addToFavorites(id)),
     deleteFromFavorites: (id) => dispatch(deleteFromFavorites(id))
   }
