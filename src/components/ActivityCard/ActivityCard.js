@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
-import css from './ActivityCard.css'
+import css from './ActivityCard.css';
+import { results } from '../../dataSet/myData';
 
 
 const ActivityCard = (props) => {
   // console.log(props);
-  let activities = props.results.map((item) => {
+  // let activities = props.results.map((item) => {
 
-    console.log(item);
-  });
-  
+    // console.log(item);
+  // });
+
   return (
     <div className="activity-card-container">
       <div className="activity-card">

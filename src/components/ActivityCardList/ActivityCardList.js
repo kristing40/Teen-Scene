@@ -1,14 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import css from './ActivityCardList.css'
 import ActivityCard from '../ActivityCard/ActivityCard'
+import { results } from '../../dataSet/myData';
 
 
-class ActivityCardList extends Component {
-  render() {
-    
-    return(
+const ActivityCardList = (results) =>  {
 
-    )
-  }
+  
+
+  console.log(results);
+
+  return (
+
+  )
 }
 export default ActivityCardList;
