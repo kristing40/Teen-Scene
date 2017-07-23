@@ -7,7 +7,7 @@ import css from './Header.css';
 const Header = (props)  => {
     // console.log(props);
   return (
-    <div className="Header">
+    <div className="header">
       <h1>Teen Scene</h1>
       <SearchContainer/>
     </div>

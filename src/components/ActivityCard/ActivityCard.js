@@ -4,24 +4,27 @@ import css from './ActivityCard.css';
 
 
 const ActivityCard = (props) => {
-  let activities = props.results.map((item) => {
-    // console.log(props);
+ console.log(props);
 
-  });
+  const favorited = () => {
+
+  }
+
+
   return (
     <div className="activity-card-container">
       <div className="activity-card">
         <div className="id">
-          <img />
-          <h2 className="activity-title">Act</h2>
+          <h2 className="activity-title">Activity</h2>
           <h2 className="activity-location">Location</h2>
-          <h3 className="activity-description">Desciption</h3>
+          <h3 className="activity-description">Description</h3>
           <p className="activity-season">season</p>
           <p className="activity-leader">leader</p>
           <p className="activity-phone">phone</p>
-          <p className="activity-age">page</p>
+          <p className="activity-age">age</p>
         </div>
       </div>
+  
     </div>
   )
 }

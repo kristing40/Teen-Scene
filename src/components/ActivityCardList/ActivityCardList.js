@@ -1,21 +1,39 @@
-import React from 'react';
+import React, { Component } from 'react';
 import css from './ActivityCardList.css'
 import ActivityCard from '../ActivityCard/ActivityCard'
 import { results } from '../../dataSet/myData';
 
 
-const ActivityCardList = (props) =>  {
-   let cards = results.map((card) => {
-     return <ActivityCard key={card.id}
-                          id={card.id}
-                          title={card.title}
-                          description={card.description}
-                        />
+class ActivityCardList extends Component {
+  constructor() {
+    super();
+  }
 
+ componentDidMount() {
+
+ }
+
+ render() {
+   let cards = results.map((item) => {
+     return <ActivityCard
+              keys={item.id}
+              cardId={item.id}
+              type={item.type}
+              age={item.age}
+              acivity={item.activity}
+              season={item.season}
+              description={item.description}
+              leader={item.leader}
+              phone={item.phone}/>
    });
 
    return (
-    {cards}
-  )
+     <div>
+       {cards}
+     </div>
+   )
+ }
+
 }
+
 export default ActivityCardList;

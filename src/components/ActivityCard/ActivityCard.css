@@ -5,10 +5,33 @@
 .activity-card-container {
   border: 3px solid  #EE00EE;
   margin: 60px auto;
-  width: 100%;
+  width: 90%;
 }
 
 .activity-card {
   width: 100%;
   padding: 20px;
+}
+
+.fav-btn,
+.unfav-btn,
+.deleteCard-btn {
+  height: 40px;
+  width: 40px;
+}
+
+.fav-btn {
+  background-image: url(./images/like.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.unfav-btn {
+  background-image: url(./images/like.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.deleteCard-btn {
+
 }
