@@ -4,9 +4,11 @@ import css from './ActivityCard.css'
 
 const ActivityCard = (props) => {
   // console.log(props);
-  // let activities = this.props.map((item) => {
-  //   console.log(item);
-  // });
+  let activities = props.results.map((item) => {
+
+    console.log(item);
+  });
+  
   return (
     <div className="activity-card-container">
       <div className="activity-card">

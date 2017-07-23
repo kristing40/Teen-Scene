@@ -57,6 +57,7 @@ import ActivityCard from '../ActivityCard/ActivityCard'
 
           <button className="submit-btn" onClick={(e) => this.handleSubmit(e)}>Submit</button>
         </div>
+        {/* <ActivityCardContainer/> */}
         <ActivityCard results={results} props={this.state.props}/>
       </div>
     )
