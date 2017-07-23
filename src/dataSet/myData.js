@@ -50,7 +50,7 @@ export const results = [
     "description": "A place for teen girls to meet & greet",
     "location": 'Denver, CO',
     "season": "twice monthly",
-    "Leader": "Mary Olsen",
+    "Leader": "Gerry Stapleton",
     "phone": 7206768824,
     "age": 16
   },
@@ -138,7 +138,7 @@ export const results = [
     "description": "A place for teen girls to meet & greet",
     "location": 'Denver, CO',
     "season": "summer",
-    "Leader": "Mary Olsen",
+    "Leader": "Lucy Callo",
     "phone": 7205553456,
     "age": 16
   },
@@ -149,7 +149,7 @@ export const results = [
     "description": "Teens learn to cultivate plants",
     "location": 'Denver, CO',
     "season": "summer",
-    "Leader": "Mary Olsen",
+    "Leader": "Don Mickels",
     "phone": 7205553456,
     "age": 16
   },
@@ -276,7 +276,6 @@ export const results = [
   },
   {
     "id": 26,
-    "type": "Volunteer",
     "type": "Volunteer",
     "activity": "Teen Habitat for Humanity",
     "description": "A place for teen girls to meet & greet",

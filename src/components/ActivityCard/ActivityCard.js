@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
-import css from './ActivityCard.css'
+import css from './ActivityCard.css';
+// import { results } from '../../dataSet/myData';
 
 
 const ActivityCard = (props) => {
-  console.log(props);
-  // let activities = this.props.map((item) => {
-  //   console.log(item);
-  // });
+  let activities = props.results.map((item) => {
+    // console.log(props);
+
+  });
   return (
     <div className="activity-card-container">
       <div className="activity-card">
         <div className="id">
-          <h2 className="activity-title">Activity</h2>
+          <img />
+          <h2 className="activity-title">Act</h2>
           <h2 className="activity-location">Location</h2>
           <h3 className="activity-description">Desciption</h3>
           <p className="activity-season">season</p>
@@ -22,7 +24,6 @@ const ActivityCard = (props) => {
       </div>
     </div>
   )
-
 }
 
 

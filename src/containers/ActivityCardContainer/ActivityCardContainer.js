@@ -1,20 +1,21 @@
 import { connect } from 'react-redux';
-import actions from '../../actions/actions';
+import {selectNewActivity, deleteActivity, addToFavorites, deleteFromFavorites } from '../../actions/actions';
 import ActivityCard from '../../components/ActivityCard/ActivityCard';
 
 
-const mapStateToProps (state) => {
+const mapStateToProps = (state) => {
   return {
-    cardId: state.id
+    activityCardId: state.id
   }
 }
 
-const mapDispatchToProps (dispatch) => {
+const mapDispatchToProps = (dispatch) => {
+  
   return {
-    addNewActivity(id) =>  dispatch(addNewActivity(id)),
-    deleteActivity(id) => dispatch(deleteActivity(id)),
-    addToFavorites(id) => dispatch(addToFavorites(id)),
-    deleteFromFavorites(id) => dispatch(deleteFromFavorites(id))
+    selectNewActivity: (id) =>  dispatch(selectNewActivity(id)),
+    deleteActivity: (id) => dispatch(deleteActivity(id)),
+    addToFavorites: (id) => dispatch(addToFavorites(id)),
+    deleteFromFavorites: (id) => dispatch(deleteFromFavorites(id))
   }
 }
 
