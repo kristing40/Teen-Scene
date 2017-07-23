@@ -10,8 +10,8 @@ import ActivityCard from '../ActivityCard/ActivityCard'
       super(props);
         this.state = {
           activity: '',
-          // userLocation: ''
         }
+        // console.log(props);
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -39,9 +39,9 @@ import ActivityCard from '../ActivityCard/ActivityCard'
         <div className="input-info">
           {/* <input id="userLocation" className="user-input-location" value={this.state.userLocation} type="Search" placeholder="Enter a city" onChange={(e) => this.handleChange(e, 'userLocation')}/> */}
 
+          <label id="activity-selector" className="activity-label">Choose an Activity : </label>
           <select id="activity-selector" className="user-input-activity" value={this.state.activity} onChange={(e) => this.handleChange(e)}>
             <option value="Acting">Acting</option>
-            <label id="activity-selector" className="activity-label">Choose an Activity : </label>
             <option value="Meet and Greet">Meet and Greet</option>
             <option value="Art">Art</option>
             <option value="Book Club">Book Club</option>

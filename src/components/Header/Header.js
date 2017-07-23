@@ -4,8 +4,8 @@ import SearchContainer from '../../containers/SearchContainer/SearchContainer';
 import css from './Header.css';
 
 
-const Header = ()  => {
-
+const Header = (props)  => {
+    // console.log(props);
   return (
     <div className="Header">
       <h1>Teen Scene</h1>

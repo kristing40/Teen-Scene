@@ -3,7 +3,7 @@ import css from './ActivityCard.css'
 
 
 const ActivityCard = (props) => {
-  console.log(props);
+  // console.log(props);
   // let activities = this.props.map((item) => {
   //   console.log(item);
   // });
