@@ -10,7 +10,7 @@ const mapStateToProps = (state) => {
 }
 
 const mapDispatchToProps = (dispatch) => {
-  
+
   return {
     selectNewActivity: (id) =>  dispatch(selectNewActivity(id)),
     deleteActivity: (id) => dispatch(deleteActivity(id)),
