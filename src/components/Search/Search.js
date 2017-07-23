@@ -9,27 +9,28 @@ import ActivityCard from '../ActivityCard/ActivityCard'
     constructor(props) {
       super(props);
         this.state = {
-          activity: '',
+          searchParam: '',
         }
-        // console.log(props);
+
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
   }
 
    componentDidMount() {
      let rawDataArray = results.map((item) => {
-      //  console.log(item);
      });
    }
 
    handleChange(e) {
-     this.setState({activity: e.target.value})
+     this.setState({searchParam: e.target.value})
    }
 
    handleSubmit(e) {
      e.preventDefault();
-     this.setState({activity: ''})
-     console.log('im working');
+     const { searchParam } = this.state;
+     debugger
+     this.props.selectNewActivity(searchParam)
+     this.setState({searchParam: ''})
    }
 
   render() {
@@ -40,7 +41,7 @@ import ActivityCard from '../ActivityCard/ActivityCard'
           {/* <input id="userLocation" className="user-input-location" value={this.state.userLocation} type="Search" placeholder="Enter a city" onChange={(e) => this.handleChange(e, 'userLocation')}/> */}
 
           <label id="activity-selector" className="activity-label">Choose an Activity : </label>
-          <select id="activity-selector" className="user-input-activity" value={this.state.activity} onChange={(e) => this.handleChange(e)}>
+          <select id="activity-selector" className="user-input-activity" value={this.props.searchParam} onChange={(e) => this.handleChange(e)}>
             <option value="Acting">Acting</option>
             <option value="Meet and Greet">Meet and Greet</option>
             <option value="Art">Art</option>

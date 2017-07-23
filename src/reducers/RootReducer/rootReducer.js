@@ -5,6 +5,7 @@ import { selectNewActivityReducer } from '../SelectNewActivityReducer/SelectNewA
 import { deleteActivityReducer } from '../DeleteActivityReducer/DeleteActivityReducer';
 import { addToFavoritesReducer } from '../AddToFavoritesReducer/AddToFavoritesReducer';
 import { deleteFromFavoritesReducer } from '../DeleteFromFavoritesReducer/DeleteFromFavoritesReducer';
+import { appReducer } from '../AppReducer/AppReducer'
 
 
 export const history = createHistory();
@@ -15,5 +16,6 @@ export const rootReducer = combineReducers ({
   selectNewActivityReducer: selectNewActivityReducer,
   deleteActivityReducer: deleteActivityReducer,
   addToFavoritesReducer: addToFavoritesReducer,
-  deleteFromFavoritesReducer: deleteFromFavoritesReducer
+  deleteFromFavoritesReducer: deleteFromFavoritesReducer,
+  appReducer: appReducer
 });

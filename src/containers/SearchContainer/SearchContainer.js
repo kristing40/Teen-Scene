@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { selectNewActivity, deleteActivity, addToFavorites, deleteFromFavorites } from '../../actions/actions';
+import { activitySelected, activityDeleted, activityAddedToFavorites, activityDeletedFromFavorites } from '../../actions/actions';
 import Search from '../../components/Search/Search';
 
 
@@ -15,10 +15,10 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
 
   return {
-    selectNewActivity: (activity) => dispatch(selectNewActivity(activity)),
-    deleteActivity: (id) => dispatch(deleteActivity(id)),
-    addToFavorites: (id) => dispatch(addToFavorites(id)),
-    deleteFromFavorites: (id) => dispatch(deleteFromFavorites(id))
+    selectNewActivity: (searchParam) => dispatch(activitySelected(searchParam)),
+    deleteActivity: (id) => dispatch(activityDeleted(id)),
+    addToFavorites: (id) => dispatch(activityAddedToFavorites(id)),
+    deleteFromFavorites: (id) => dispatch(activityDeletedFromFavorites(id))
   }
 }
 

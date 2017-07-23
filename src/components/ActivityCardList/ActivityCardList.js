@@ -1,22 +1,27 @@
 import React, { Component } from 'react';
-import css from './ActivityCardList.css'
-import ActivityCard from '../ActivityCard/ActivityCard'
+import css from './ActivityCardList.css';
+import ActivityCard from '../ActivityCard/ActivityCard';
 import { results } from '../../dataSet/myData';
 
 
 class ActivityCardList extends Component {
-  constructor() {
-    super();
-  }
-
  componentDidMount() {
-
+   console.log('***********************', this.props)
  }
 
  render() {
+  // results = [{}, {}...]
+  // const { searchParameter } = this.props // => 'activity'
+  //
+  // results.filter((activity) => {
+  //   if(activity.type !== searchParameter) {
+  //
+  //   }
+  // })
+
    let cards = results.map((item) => {
      return <ActivityCard
-              keys={item.id}
+              key={item.id}
               cardId={item.id}
               type={item.type}
               age={item.age}
@@ -28,8 +33,9 @@ class ActivityCardList extends Component {
    });
 
    return (
-     <div>
-       {cards}
+    <div>
+      <h1>Hello</h1>
+      {cards}
      </div>
    )
  }
