@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import css from './Search.css';
 import { results } from '../../dataSet/myData';
 import ActivityCard from '../ActivityCard/ActivityCard'
-// import ActivityCardContainer from '../../containers/ActivityCardContainer/ActivityCardContainer'
+// import ActivityCardListContainer from '../../containers/ActivityCardListContainer/ActivityCardListContainer'
 
 
   class Search extends Component {
@@ -16,21 +16,21 @@ import ActivityCard from '../ActivityCard/ActivityCard'
       this.handleSubmit = this.handleSubmit.bind(this);
   }
 
- componentDidMount() {
-   let rawDataArray = results.map((item) => {
-    //  console.log(item);
-   });
- }
+   componentDidMount() {
+     let rawDataArray = results.map((item) => {
+      //  console.log(item);
+     });
+   }
 
- handleChange(e) {
-   this.setState({activity: e.target.value})
- }
+   handleChange(e) {
+     this.setState({activity: e.target.value})
+   }
 
- handleSubmit(e) {
-   e.preventDefault();
-   this.setState({activity: ''})
-   console.log('im working');
- }
+   handleSubmit(e) {
+     e.preventDefault();
+     this.setState({activity: ''})
+     console.log('im working');
+   }
 
   render() {
 
@@ -57,8 +57,7 @@ import ActivityCard from '../ActivityCard/ActivityCard'
 
           <button className="submit-btn" onClick={(e) => this.handleSubmit(e)}>Submit</button>
         </div>
-        {/* <ActivityCardContainer/> */}
-        <ActivityCard results={results} props={this.state.props}/>
+        {/* <ActivityCard results={results} props={this.state.props}/> */}
       </div>
     )
   }

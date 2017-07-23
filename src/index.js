@@ -28,4 +28,3 @@ ReactDOM.render(
   </Provider>, document.getElementById('root'));
 
   // <App/>, document.getElementById('root'));
-// registerServiceWorker();

@@ -9,7 +9,7 @@ const mapStateToProps = (state) => {
     arrayOfActivities: state.activity,
     deleteCard: state.id,
     deleteFavorite: state.id,
-    addFavorite: state.id
+    arrayOfFavorites: state.id
   }
 }
 
