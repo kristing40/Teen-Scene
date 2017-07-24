@@ -17,8 +17,8 @@ import ActivityCard from '../ActivityCard/ActivityCard'
   }
 
    componentDidMount() {
-     let rawDataArray = results.map((item) => {
-     });
+     console.log(this.props);
+      this.props.searchActiveData()
    }
 
    handleChange(e) {
