@@ -29,7 +29,7 @@ export const results = [
     "location": 'location: Denver, CO',
     "season": "season: summer",
     "Leader": "leadaer: Racine Weathers",
-    "phone": "720-213-9876",
+    "phone": "phone: 720-213-9876",
     "age": "age: 16-19"
   },
   {
@@ -73,7 +73,7 @@ export const results = [
     "location": 'location: Denver, CO',
     "season": "season: all year",
     "Leader": "name: Dallia Hill",
-    "phone": "720-7895-432",
+    "phone": "phone: 720-7895-432",
     "age": "age: 15-19"
   },
   {
@@ -139,7 +139,7 @@ export const results = [
     "location": 'location:Denver, CO',
     "season": "season: summer",
     "Leader": "leasder: Lucy Callo",
-    "phone": "phone: 7205553456",
+    "phone": "phone: 720-555-3456",
     "age": "age: 16"
   },
   {
@@ -183,7 +183,7 @@ export const results = [
     "location": 'location: Denver, CO',
     "season": "season: summer",
     "Leader": "leader: Darrin Martin",
-    "phone": "phone: 7207594532",
+    "phone": "phone: 720-759-4532",
     "age": "age: 16"
   },
   {

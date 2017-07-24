@@ -17,7 +17,7 @@ import ActivityCard from '../ActivityCard/ActivityCard'
   }
 
    componentDidMount() {
-     console.log(this.props);
+    //  console.log(this.props);
       this.props.searchActiveData()
    }
 

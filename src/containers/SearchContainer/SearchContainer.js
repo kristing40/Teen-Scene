@@ -15,7 +15,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
 
   return {
-    // searchActiveData: () => dispatch(fetchActiveData()),
+    searchActiveData: () => dispatch(fetchActiveData()),
     selectNewActivity: (searchParam) => dispatch(activitySelected(searchParam)),
     deleteActivity: (id) => dispatch(activityDeleted(id)),
     addToFavorites: (id) => dispatch(activityAddedToFavorites(id)),

@@ -22,11 +22,11 @@ export const  updatesActivities = (activities) => {
 }
 
 export const fetchActiveData = () => {
-  // return fetch('http://api.amp.active.com/v2/search/?city=denver&kids=true&current_page=1&per_page=10&sort=distance&exclude_children=false&api_key=pz5h35xbs7fye9rvjgdqfpcg')
-  // .then((response) => {
-  //   response.json()
-  //   console.log(response);
-// `````````  // });
-//   //
-//   // .then(data)`````````
+  return (dispatch) => {
+    fetch('https://cors-anywhere.herokuapp.com/http://api.amp.active.com/v2/search/?city=denver&kids=true&current_page=1&per_page=10&sort=distance&exclude_children=false&api_key=pz5h35xbs7fye9rvjgdqfpcg')
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+    })
+  }
 }
