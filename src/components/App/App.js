@@ -3,8 +3,10 @@ import { Route, Switch } from 'react-router-dom';
 import Header from '../Header/Header';
 import AppCss from './App.css';
 import ActivityCardListContainer from '../../containers/ActivityCardListContainer/ActivityCardListContainer';
-import SearchContainer from '../../containers/SearchContainer/SearchContainer';
-import { results } from '../../dataSet/myData'
+// import SearchContainer from '../../containers/SearchContainer/SearchContainer';
+import { results } from '../../dataSet/myData';
+
+
 
 
 export default class App extends Component {
@@ -18,7 +20,7 @@ export default class App extends Component {
       return (
         <main className="app">
           <Header title={this.props.title}/>
-          <SearchContainer/>
+          {/* <SearchContainer/> */}
           <ActivityCardListContainer list={this.props.list} />
         </main>
       );

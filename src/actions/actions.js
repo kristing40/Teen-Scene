@@ -1,21 +1,32 @@
+import 'whatwg-fetch';
 
-  export const  activitySelected = (searchParam) => {
-    console.log("WE MADE IT!!!!!!!!!");
-    return {type: 'SELECT_NEW_ACTIVITY', searchParam}
-  }
+export const  activitySelected = (searchParam) => {
+  console.log("WE MADE IT!!!!!!!!!");
+  return {type: 'SELECT_NEW_ACTIVITY', searchParam}
+}
 
-  export const activityDeleted = (id) => {
-    return {type: 'DELETE_ACTIVITY', id}
-  }
+export const activityDeleted = (id) => {
+  return {type: 'DELETE_ACTIVITY', id}
+}
 
-  export const activityAddedToFavorites = (id) => {
-    return {type: 'ADD_TO_FAVORITES', id}
-  }
+export const activityAddedToFavorites = (id) => {
+  return {type: 'ADD_TO_FAVORITES', id}
+}
 
-  export const  activityDeletedFromFavorites = (id) => {
-    return {type: 'DELETE_FROM_FAVORITES', id}
-  }
+export const  activityDeletedFromFavorites = (id) => {
+  return {type: 'DELETE_FROM_FAVORITES', id}
+}
 
-  export const  updatesActivities = (activities) => {
-    return {type: 'UPDATES_ACTIVITIES', activities}
+export const  updatesActivities = (activities) => {
+  return {type: 'UPDATES_ACTIVITIES', activities}
+}
+
+export const fetchActiveData = () => {
+  return (dispatch) => {
+    fetch('https://cors-anywhere.herokuapp.com/http://api.amp.active.com/v2/search/?city=denver&kids=true&current_page=1&per_page=10&sort=distance&exclude_children=false&api_key=pz5h35xbs7fye9rvjgdqfpcg')
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+    })
   }
+}
