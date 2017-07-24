@@ -4,88 +4,88 @@ export const results = [
     "type": "Acting",
     "activity": "Summer Hangouts for non-tradtional school teens",
     "description": "A place for teens to meet & greet",
-    "location": 'Denver, CO',
-    "season": "summer",
-    "Leader": "Nadia Comansky",
-    "phone": 7205765098,
-    "age": 16
+    "location": 'location: Denver, CO',
+    "season": "season: summer",
+    "Leader": "leader: Nadia Comansky",
+    "phone": "phone: 720-576-5098",
+    "age": "age: 16"
   },
   {
     "id": 2,
     "type": "Meet & Greet",
     "activity": "Teen Girls Connect",
     "description": "A place for teen girls to meet & greet",
-    "location": 'Denver, CO',
-    "season": "summer",
-    "Leader": "Mary Olsen",
-    "phone": 7205553456,
-    "age": 16-18
+    "location": 'location: Denver, CO',
+    "season": "season: summer",
+    "Leader": "leader: Mary Olsen",
+    "phone": "phone: 720-555-3456",
+    "age": "age: 16-18"
   },
   {
     "id": 3,
     "type": "Meet & Greet",
     "activity": "Bar-b-que & chat",
     "description": "A place for teen girls to meet & greet",
-    "location": 'Denver, CO',
-    "season": "summer",
-    "Leader": "Racine Weathers",
-    "phone": 7202139876,
-    "age": 16-19
+    "location": 'location: Denver, CO',
+    "season": "season: summer",
+    "Leader": "leadaer: Racine Weathers",
+    "phone": "720-213-9876",
+    "age": "age: 16-19"
   },
   {
     "id": 4,
     "type": "Meet & Greet",
     "activity": "Girls Night Out",
     "description": "A place for teen girls to meet & greet",
-    "location": 'Denver, CO',
-    "season": "twice monthly",
-    "Leader": "Laura Overton",
-    "phone": 7205920876,
-    "age": 16
+    "location": 'location: Denver, CO',
+    "season": "season: twice monthly",
+    "Leader": "leader: Laura Overton",
+    "phone": "phone: 720-520-9876",
+    "age": "age: 16"
   },
   {
     "id": 5,
     "type": "Meet & Greet",
     "activity": "Boardgame Hangout",
     "description": "A place for teen girls to meet & greet",
-    "location": 'Denver, CO',
-    "season": "twice monthly",
-    "Leader": "Gerry Stapleton",
-    "phone": 7206768824,
-    "age": 16
+    "location": 'location: Denver, CO',
+    "season": "season: twice monthly",
+    "Leader": "leader: Gerry Stapleton",
+    "phone": "phone: 720-6768-824",
+    "age": "age: 16"
   },
   {
     "id": 6,
     "type": "Art",
     "activity": "Sculpting Classes for teens",
     "description": "A place for teen girls to meet & greet",
-    "location": 'Denver, CO',
-    "season": "all year",
-    "Leader": "Jorge Pena",
-    "phone": 3032990001,
-    "age": 15-19
+    "location": 'location: Denver, CO',
+    "season": "season: all year",
+    "Leader": "leader: Jorge Pena",
+    "phone": "phone: 303-299-0001",
+    "age": "15-19"
   },
   {
     "id": 7,
     "type": "Art",
     "activity": "Exploring surrealism for teens",
     "description": "A place for teen girls to meet & greet",
-    "location": 'Denver, CO',
-    "season": "all year",
-    "Leader": "Dallia Hill",
-    "phone": 7207895432,
-    "age": 15-19
+    "location": 'location: Denver, CO',
+    "season": "season: all year",
+    "Leader": "name: Dallia Hill",
+    "phone": "720-7895-432",
+    "age": "age: 15-19"
   },
   {
     "id": 8,
     "type": "Art",
     "activity": "Paint Like Picasso Classes for teens",
     "description": "A place for teen girls to meet & greet",
-    "location": 'Denver, CO',
-    "season": "all year",
-    "Leader": "Jorge Pena",
-    "phone": 3034321768,
-    "age": 15-19
+    "location": 'location: Denver, CO',
+    "season": "season: all year",
+    "Leader": "leader: Jorge Pena",
+    "phone": "phone: 303-421-5768",
+    "age": "age: 15-19"
   },
   {
     "id": 9,

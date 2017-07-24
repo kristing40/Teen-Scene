@@ -6,18 +6,10 @@ import { results } from '../../dataSet/myData';
 
 class ActivityCardList extends Component {
  componentDidMount() {
-   console.log('***********************', this.props)
+
  }
 
  render() {
-  // results = [{}, {}...]
-  // const { searchParameter } = this.props // => 'activity'
-  //
-  // results.filter((activity) => {
-  //   if(activity.type !== searchParameter) {
-  //
-  //   }
-  // })
 
    let cards = results.map((item) => {
      return <ActivityCard
@@ -34,7 +26,6 @@ class ActivityCardList extends Component {
 
    return (
     <div>
-      <h1>Hello</h1>
       {cards}
      </div>
    )

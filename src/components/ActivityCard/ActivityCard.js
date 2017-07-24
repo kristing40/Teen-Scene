@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import css from './ActivityCard.css';
-// import { results } from '../../dataSet/myData';
 
 
 const ActivityCard = (props) => {
