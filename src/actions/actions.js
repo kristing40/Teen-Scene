@@ -23,10 +23,8 @@ export const  fetchUpdatedActivities = (activities) => {
 
 export const fetchApiData = () => {
   return (dispatch) => {
-    fetch('https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/js?key=AIzaSyDOxBEKNVXUe6NNTBA34Lm_KAb7shUQcqo&callback=initMap')
+    fetch("https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/js?key=AIzaSyDOuS11_DCCtUQkmoRmeA_gWiLSh-onOGA&libraries=places")
     .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
-    })
+    .then((data) => console.log(data))
   }
 }

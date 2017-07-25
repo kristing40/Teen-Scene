@@ -11,12 +11,12 @@ import { results } from '../../dataSet/myData';
 export default class App extends Component {
   constructor(props) {
     super(props)
-    console.log(props);
+    // console.log(props);
   }
 
   componentDidMount() {
     this.props.getUpdatedActivities(results)
-    console.log(results);
+    // console.log(results);
     // get the data
     // reducer -> function that updates props
   }
