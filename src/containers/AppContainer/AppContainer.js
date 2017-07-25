@@ -4,19 +4,19 @@ import App from '../../components/App/App';
 
 
 const mapStateToProps = (state) => {
-
+ console.log(state);
   return {
-    title: state.appReducer.title
+    title: state.appReducer.title,
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
 
- return {
+  return {
 
-   getUpdatedActivities: (activity) => dispatch(fetchUpdatedActivities(activity)),
+    getUpdatedActivities: (activity) => dispatch(fetchUpdatedActivities(activity)),
 
- }
+  }
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(App)

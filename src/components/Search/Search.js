@@ -2,31 +2,32 @@ import React, { Component } from 'react';
 import css from './Search.css';
 import { results } from '../../dataSet/myData';
 import ActivityCard from '../ActivityCard/ActivityCard'
-// import ActivityCardListContainer from '../../containers/ActivityCardListContainer/ActivityCardListContainer'
 
 
   class Search extends Component {
     constructor(props) {
       super(props);
+      console.log(this.props);
 
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
   }
 
    componentDidMount() {
-    //  console.log(this.props);
       this.props.getApiData()
    }
 
    handleChange(e) {
-     this.setState({searchParam: e.target.value})
+     this.setState({selectNewActivity: e.target.value})
    }
 
    handleSubmit(e) {
      e.preventDefault();
-     const { searchParam } = this.state;
-     this.props.getNewActivity(searchParam)
-     this.setState({searchParam: ''})
+     const { selectNewActivity } = this.state;
+     console.log(selectNewActivity);
+     this.props.getNewActivity(selectNewActivity)
+
+     this.setState({selectNewActivity: ''})
    }
 
   render() {

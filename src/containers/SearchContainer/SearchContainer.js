@@ -14,7 +14,7 @@ const mapDispatchToProps = (dispatch) => {
 
   return {
     getApiData: () => dispatch(fetchApiData()),
-    getNewActivity: (searchParam) => dispatch(fetchActivitySelected(searchParam)),
+    getNewActivity: (selectNewActivity) => dispatch(fetchActivitySelected(selectNewActivity)),
   }
 }
 

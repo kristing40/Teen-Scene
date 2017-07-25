@@ -3,12 +3,9 @@ import ActivityCardList from '../../components/ActivityCardList/ActivityCardList
 
 
 const mapStateToProps = (state) => {
-  // console.log(state);
-  return {
-    list: state.appReducer.list,
-    searchParam: state.searchParam,
-  }
+
+  return state
 }
 
 
-export default connect(mapStateToProps)(ActivityCardList);
+export default connect(mapStateToProps, null)(ActivityCardList);

@@ -3,7 +3,9 @@ import css from './ActivityCard.css';
 
 
 const ActivityCard = (props) => {
+// const { activity, location, description, season, leader, phone, age } = props
 
+console.log(activity, location, leader);
   return (
     <div className="activity-card-container">
       <div className="activity-card">
