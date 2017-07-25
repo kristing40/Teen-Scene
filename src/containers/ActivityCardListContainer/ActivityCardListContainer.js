@@ -3,7 +3,7 @@ import ActivityCardList from '../../components/ActivityCardList/ActivityCardList
 
 
 const mapStateToProps = (state) => {
-  console.log(state);
+  // console.log(state);
   return {
     list: state.appReducer.list,
     searchParam: state.searchParam,

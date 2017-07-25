@@ -3,9 +3,9 @@ const initialState = {
   list: [],
 }
 
-export const appReducer = (state=initialState, action) => {
+export const appReducer = (state = initialState, action) => {
   switch (action.type) {
-  case 'UPDATES_ACTIVITIES':
+  case 'UPDATE_ACTIVITIES':
     return Object.assign({}, state, {
       list: action.activities
     })

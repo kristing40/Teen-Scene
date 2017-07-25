@@ -8,9 +8,6 @@ import ActivityCard from '../ActivityCard/ActivityCard'
   class Search extends Component {
     constructor(props) {
       super(props);
-        this.state = {
-          searchParam: '',
-        }
 
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
@@ -18,7 +15,7 @@ import ActivityCard from '../ActivityCard/ActivityCard'
 
    componentDidMount() {
     //  console.log(this.props);
-      this.props.searchActiveData()
+      this.props.getApiData()
    }
 
    handleChange(e) {
@@ -28,8 +25,7 @@ import ActivityCard from '../ActivityCard/ActivityCard'
    handleSubmit(e) {
      e.preventDefault();
      const { searchParam } = this.state;
-     debugger
-     this.props.selectNewActivity(searchParam)
+     this.props.getNewActivity(searchParam)
      this.setState({searchParam: ''})
    }
 
@@ -55,10 +51,8 @@ import ActivityCard from '../ActivityCard/ActivityCard'
             <option value="Volunteer">Volunteer</option>
             <option value="Acting">Acting</option>
           </select>
-
           <button className="submit-btn" onClick={(e) => this.handleSubmit(e)}>Submit</button>
         </div>
-        {/* <ActivityCard results={results} props={this.state.props}/> */}
       </div>
     )
   }

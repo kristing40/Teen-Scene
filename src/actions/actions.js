@@ -1,29 +1,29 @@
 import 'whatwg-fetch';
 
-export const  activitySelected = (searchParam) => {
+export const  fetchActivitySelected = (searchParam) => {
   console.log("WE MADE IT!!!!!!!!!");
   return {type: 'SELECT_NEW_ACTIVITY', searchParam}
 }
 
-export const activityDeleted = (id) => {
+export const fetchActivityDeleted = (id) => {
   return {type: 'DELETE_ACTIVITY', id}
 }
 
-export const activityAddedToFavorites = (id) => {
+export const fetchActivityAddedToFavorites = (id) => {
   return {type: 'ADD_TO_FAVORITES', id}
 }
 
-export const  activityDeletedFromFavorites = (id) => {
+export const  fetchActivityDeletedFromFavorites = (id) => {
   return {type: 'DELETE_FROM_FAVORITES', id}
 }
 
-export const  updatesActivities = (activities) => {
-  return {type: 'UPDATES_ACTIVITIES', activities}
+export const  fetchUpdatedActivities = (activities) => {
+  return {type: 'UPDATE_ACTIVITIES', activities}
 }
 
-export const fetchActiveData = () => {
+export const fetchApiData = () => {
   return (dispatch) => {
-    fetch('https://cors-anywhere.herokuapp.com/http://api.amp.active.com/v2/search/?city=denver&kids=true&current_page=1&per_page=10&sort=distance&exclude_children=false&api_key=pz5h35xbs7fye9rvjgdqfpcg')
+    fetch('https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/js?key=AIzaSyDOxBEKNVXUe6NNTBA34Lm_KAb7shUQcqo&callback=initMap')
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
