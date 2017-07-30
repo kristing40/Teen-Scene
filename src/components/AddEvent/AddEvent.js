@@ -7,25 +7,27 @@ import { Link, Router, Route, Switch } from 'react-router-dom';
 class AddEvent extends Component  {
   constructor(props) {
     super(props)
-
+    console.log(props);
+    this.handleAddEventChange = this.handleAddEventChange.bind(this)
+    this.handleAddEventSubmit = this.handleAddEventSubmit.bind(this)
   }
 
-// this.handleAddEventChange = this.handleAddEventChange.bind(this)
-// this.handleAddEventSubmit = this.handleAddEventSubmit.bind(this)
 
- // handleAddEventChange(e, userInputField) {
- //   this.setState({addNewEvent: e.target.value})
- // }
+ handleAddEventChange(e, userInputField) {
+   this.props
+  //  this.setState({addNewEvent: e.target.value})
+ }
 
- // handleAddEventSubmit(e) {
- //   e.preventDefault();
- //   const { addNewEvent } =  this.state
- //
- //   this.props.getAddedEvent(addNewEvent)
- //
- //   this.setState({addNewEvent: ''})
- //
- // }
+ handleAddEventSubmit(e) {
+   e.preventDefault();
+  //  console.log(e);
+   const { addNewEvent } =  this.state
+
+   this.props.getAddedEvent(addNewEvent)
+
+   this.setState({addNewEvent: ''})
+
+ }
 
   render () {
 
@@ -48,9 +50,9 @@ class AddEvent extends Component  {
 
           <div className="add-event-btns">
 
-            <button className="add-event-btn" onClick={(e) => this.handleAddEventSubmit(e)}>Submit</button>
+            <input type="submit" value="Submit" className="add-event-btn" onClick={(e) => this.handleAddEventSubmit(e)}/>
 
-            <button className="home-btn" onClick={(e) => this.handleAddEventSubmit(e)}>Cancel</button>
+            <input value="Cancel" className="home-btn"/>
 
           </div>
         </form>

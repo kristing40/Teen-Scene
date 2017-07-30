@@ -7,16 +7,16 @@ import AddEvent from '../AddEvent/AddEvent'
 
 
   class Search extends Component {
-    constructor(props) {
-      super(props);
-
-      // this.state = {
-      //   selectNewActivity:'all',
-      // }
-
-      this.handleChange = this.handleChange.bind(this);
-      this.handleSubmit = this.handleSubmit.bind(this);
-  }
+  //   constructor(props) {
+  //     super(props);
+  //
+  //     // this.state = {
+  //     //   selectNewActivity:'all',
+  //     // }
+  //
+  //     this.handleChange = this.handleChange.bind(this);
+  //     this.handleSubmit = this.handleSubmit.bind(this);
+  // }
 
    componentDidMount() {
       // this.props.getApiData()
@@ -28,6 +28,7 @@ import AddEvent from '../AddEvent/AddEvent'
 
    handleSubmit(e) {
      e.preventDefault();
+     
      const { selectNewActivity } = this.state;
 
      this.props.getNewActivity( selectNewActivity )
