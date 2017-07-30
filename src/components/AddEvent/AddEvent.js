@@ -7,15 +7,13 @@ import { Link, Router, Route, Switch } from 'react-router-dom';
 class AddEvent extends Component  {
   constructor(props) {
     super(props)
-    // this.state = {
-    //   addNewEvent:'',
-    // }
+
   }
 
 // this.handleAddEventChange = this.handleAddEventChange.bind(this)
 // this.handleAddEventSubmit = this.handleAddEventSubmit.bind(this)
 
- // handleAddEventChange(e) {
+ // handleAddEventChange(e, userInputField) {
  //   this.setState({addNewEvent: e.target.value})
  // }
 
@@ -52,7 +50,7 @@ class AddEvent extends Component  {
 
             <button className="add-event-btn" onClick={(e) => this.handleAddEventSubmit(e)}>Submit</button>
 
-            <button className="home-btn" onClick={(e) => this.handleAddEventSubmit(e)}>Home</button>
+            <button className="home-btn" onClick={(e) => this.handleAddEventSubmit(e)}>Cancel</button>
 
           </div>
         </form>

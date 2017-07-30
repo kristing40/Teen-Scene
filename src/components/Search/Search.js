@@ -53,7 +53,6 @@ import AddEvent from '../AddEvent/AddEvent'
             <option value="Exercise">Exercise</option>
             <option value="Cooking">Cooking</option>
             <option value="Volunteer">Volunteer</option>
-            <option value="Acting">Acting</option>
           </select>
           <button className="submit-btn" onClick={(e) => this.handleSubmit(e)}>Submit</button>
         </div>
