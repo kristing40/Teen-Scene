@@ -17,12 +17,17 @@ body {
 
 form {
   background-color: #fff;
+  margin-top: -30px;
   width: 500px;
   height: 500px;
 }
 
 input {
   margin-bottom: 10px;
+}
+
+input::placeholder {
+  color: #DBDBDB;
 }
 
 .add-activity-field {
@@ -32,6 +37,15 @@ input {
   height: 50px;
 }
 
+.add-event-btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home-btn,
 .add-event-btn {
+  margin-top: 20px;
   width: 160px;
+  color: #fff;
 }

@@ -48,9 +48,13 @@ class AddEvent extends Component  {
 
           <input id="userInputField" className="add-activity-field" value={this.props.addNewEmail} type="text" placeholder="Enter an Email Address" onChange={(e) => this.handleAddEventChange(e, 'userInputField')}/>
 
-          <button className="add-event-btn" onClick={(e) => this.handleAddEventSubmit(e)}>Submit</button>
+          <div className="add-event-btns">
 
-          <button className="home-btn" onClick={(e) => this.handleAddEventSubmit(e)}>Exit</button>
+            <button className="add-event-btn" onClick={(e) => this.handleAddEventSubmit(e)}>Submit</button>
+
+            <button className="home-btn" onClick={(e) => this.handleAddEventSubmit(e)}>Home</button>
+
+          </div>
         </form>
     </div>
   )
