@@ -8,12 +8,13 @@ const mapStateToProps = (state) => {
   return {
     selectNewActivity: state.selectNewActivityReducer,
   }
+
 }
 
 const mapDispatchToProps = (dispatch) => {
 
   return {
-    getApiData: () => dispatch(fetchApiData()),
+    // getApiData: () => dispatch(fetchApiData()),
     getNewActivity: (selectNewActivity) => dispatch(fetchActivitySelected(selectNewActivity)),
   }
 }

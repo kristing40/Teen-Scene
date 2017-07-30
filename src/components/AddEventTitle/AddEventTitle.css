@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.add-event-header {
+  position: absolute;
+  top: 0;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.add-event-header-title {
+  color: #EE00EE;
+  font-size: 60px;
+  margin-top: 0;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}

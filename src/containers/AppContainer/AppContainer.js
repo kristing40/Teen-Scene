@@ -4,10 +4,7 @@ import App from '../../components/App/App';
 
 
 const mapStateToProps = (state) => {
- console.log(state);
-  return {
-    title: state.appReducer.title,
-  }
+  return state
 }
 
 const mapDispatchToProps = (dispatch) => {

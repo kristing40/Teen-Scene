@@ -1,20 +1,25 @@
 import React, { Component } from 'react';
 import css from './Search.css';
-import { results } from '../../dataSet/myData';
-import ActivityCard from '../ActivityCard/ActivityCard'
+// import { results } from '../../dataSet/myData';
+import ActivityCard from '../ActivityCard/ActivityCard';
+import { Link, Router, Route, Switch } from 'react-router-dom';
+import AddEvent from '../AddEvent/AddEvent'
 
 
   class Search extends Component {
     constructor(props) {
       super(props);
-      console.log(this.props);
+
+      // this.state = {
+      //   selectNewActivity:'all',
+      // }
 
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
   }
 
    componentDidMount() {
-      this.props.getApiData()
+      // this.props.getApiData()
    }
 
    handleChange(e) {
@@ -24,8 +29,8 @@ import ActivityCard from '../ActivityCard/ActivityCard'
    handleSubmit(e) {
      e.preventDefault();
      const { selectNewActivity } = this.state;
-     console.log(selectNewActivity);
-     this.props.getNewActivity(selectNewActivity)
+
+     this.props.getNewActivity( selectNewActivity )
 
      this.setState({selectNewActivity: ''})
    }
@@ -35,10 +40,8 @@ import ActivityCard from '../ActivityCard/ActivityCard'
     return (
       <div className="search">
         <div className="input-info">
-          {/* <input id="userLocation" className="user-input-location" value={this.state.userLocation} type="Search" placeholder="Enter a city" onChange={(e) => this.handleChange(e, 'userLocation')}/> */}
-
           <label id="activity-selector" className="activity-label">Choose an Activity : </label>
-          <select id="activity-selector" className="user-input-activity" value={this.props.searchParam} onChange={(e) => this.handleChange(e)}>
+          <select id="activity-selector" className="user-input-activity" value={this.props.searchParam}   onChange={(e) => this.handleChange(e)}>
             <option value="Acting">Acting</option>
             <option value="Meet and Greet">Meet and Greet</option>
             <option value="Art">Art</option>
@@ -47,13 +50,14 @@ import ActivityCard from '../ActivityCard/ActivityCard'
             <option value="Gardening">Gardening</option>
             <option value="Computer Programming">Computer Programming</option>
             <option value="Outdoor Fun">Outdoor Fun</option>
-            <option value="Exercises">Exercise</option>
+            <option value="Exercise">Exercise</option>
             <option value="Cooking">Cooking</option>
             <option value="Volunteer">Volunteer</option>
             <option value="Acting">Acting</option>
           </select>
           <button className="submit-btn" onClick={(e) => this.handleSubmit(e)}>Submit</button>
         </div>
+        <Link to='/addEvent' className="add-activity-link">Add an activity</Link>
       </div>
     )
   }

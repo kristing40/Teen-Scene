@@ -21,10 +21,14 @@ export const  fetchUpdatedActivities = (activities) => {
   return {type: 'UPDATE_ACTIVITIES', activities}
 }
 
-export const fetchApiData = () => {
-  return (dispatch) => {
-    fetch("https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/js?key=AIzaSyDOuS11_DCCtUQkmoRmeA_gWiLSh-onOGA&libraries=places")
-    .then((response) => response.json())
-    .then((data) => console.log(data))
-  }
+export const fetchAddEvent = (event) => {
+  return {type: 'ADD_EVENT', event}
 }
+
+// export const fetchApiData = () => {
+//   return (dispatch) => {
+//     fetch("https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/js?key=AIzaSyDOuS11_DCCtUQkmoRmeA_gWiLSh-onOGA&libraries=places")
+//     .then((response) => response.json())
+//     .then((data) => console.log(data))
+//   }
+// }

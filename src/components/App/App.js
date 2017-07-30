@@ -1,21 +1,20 @@
 import React, { Component } from 'react';
-import { Route, Switch } from 'react-router-dom';
 import Header from '../Header/Header';
 import AppCss from './App.css';
 import ActivityCardListContainer from '../../containers/ActivityCardListContainer/ActivityCardListContainer';
-import { results } from '../../dataSet/myData';
-// import { fetchUpdatedActivities } from '../../actions/actions'
-
+import { Link, Router, Route, Switch } from 'react-router-dom';
+import AddEvent from '../AddEvent/AddEvent'
+// import { results } from '../../dataSet/myData';
 
 
 export default class App extends Component {
   constructor(props) {
     super(props)
-    // console.log(props);
   }
 
   componentDidMount() {
-    this.props.getUpdatedActivities(results)
+    //call actionCreator
+    // this.props.getUpdatedActivities(results)
     // console.log(results);
     // get the data
     // reducer -> function that updates props
@@ -24,8 +23,11 @@ export default class App extends Component {
     render() {
       return (
         <main className="app">
-          <Header title={this.props.title}/>
-          <ActivityCardListContainer list={this.props.list} />
+            <Route exact path='/' component={Header}/>
+            <Route exact path='/' component={ActivityCardListContainer}/>
+            <Route exact path='/addEvent' render={() => {
+             return <AddEvent {...this.props} type='AddEvent'/>
+           }}/>
         </main>
       );
     }

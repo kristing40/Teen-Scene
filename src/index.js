@@ -25,5 +25,3 @@ ReactDOM.render(
       <Route to='/' history={history} component={AppContainer}/>
     </ConnectedRouter>
   </Provider>, document.getElementById('root'));
-
-  // <App/>, document.getElementById('root'));
