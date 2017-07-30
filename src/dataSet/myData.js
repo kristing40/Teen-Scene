@@ -6,51 +6,51 @@ export const results = [
     "description": "A place for teens to meet & greet",
     "location": 'location: 4250 Shoshone St, Denver, CO 80211',
     "season": "season: summer",
-    "Leader": "leader: Nadia Comansky",
+    "leader": "leader: Nadia Comansky",
     "phone": "phone: 720-576-5098",
     "age": "age: 16"
   },
   {
     "id": 2,
-    "type": "Meet & Greet",
+    "type": "Meet and Greet",
     "activity": "Teen Girls Connect",
     "description": "A place for teen girls to meet new connections",
     "location": 'location: 100 Poplar St, Denver, CO 80220',
     "season": "season: summer",
-    "Leader": "leader: Mary Olsen",
+    "leader": "leader: Mary Olsen",
     "phone": "phone: 720-555-3456",
     "age": "age: 16-18"
   },
   {
     "id": 3,
-    "type": "Meet & Greet",
+    "type": "Meet and Greet",
     "activity": "Bar-b-que & chat",
     "description": "A place for teen girls to meet & greet",
     "location": 'location: washington Park S. Downing St. & E. Louisiana Ave., Denver, CO 80210',
     "season": "season: summer",
-    "Leader": "leadaer: Racine Weathers",
+    "leader": "leadaer: Racine Weathers",
     "phone": "phone: 720-213-9876",
     "age": "age: 16-19"
   },
   {
     "id": 4,
-    "type": "Meet & Greet",
+    "type": "Meet and Greet",
     "activity": "Girls Night Out",
     "description": "A place for teen girls to meet & greet",
     "location": 'location: 2000 S Colorado Blvd, Denver, CO 80222',
     "season": "season: twice monthly",
-    "Leader": "leader: Laura Overton",
+    "leader": "leader: Laura Overton",
     "phone": "phone: 720-520-9876",
     "age": "age: 16"
   },
   {
     "id": 5,
-    "type": "Meet & Greet",
+    "type": "Meet and Greet",
     "activity": "Boardgame Hangout",
     "description": "A place for teen girls to meet & greet",
     "location": 'location: 2961 Roslyn St, Denver, CO 80238',
     "season": "season: twice monthly",
-    "Leader": "leader: Gerry Stapleton",
+    "leader": "leader: Gerry Stapleton",
     "phone": "phone: 720-6768-824",
     "age": "age: 16"
   },
@@ -61,7 +61,7 @@ export const results = [
     "description": "A place for teen girls to meet & greet",
     "location": 'location: 200 Grant St, Denver, CO 80203',
     "season": "season: all year",
-    "Leader": "leader: Jorge Pena",
+    "leader": "leader: Jorge Pena",
     "phone": "phone: 303-299-0001",
     "age": "15-19"
   },
@@ -72,7 +72,7 @@ export const results = [
     "description": "A place for teen girls to meet & greet",
     "location": 'location: 200 Grant St, Denver, CO 80203',
     "season": "season: all year",
-    "Leader": "name: Dallia Hill",
+    "leader": "name: Dallia Hill",
     "phone": "phone: 720-7895-432",
     "age": "age: 15-19"
   },
@@ -83,7 +83,7 @@ export const results = [
     "description": "A place for teen girls to meet & greet",
     "location": 'location: 100 W 14th Ave Pkwy, Denver, CO 80204',
     "season": "season: all year",
-    "Leader": "leader: Jorge Pena",
+    "leader": "leader: Jorge Pena",
     "phone": "phone: 303-421-5768",
     "age": "age: 15-19"
   },
@@ -94,7 +94,7 @@ export const results = [
     "description": "A place for teen girls to meet & greet",
     "location": 'location: 4705 Montview Blvd, Denver, CO 80207',
     "season": "season: all year long",
-    "Leader": "Leader: Tricia Thompson",
+    "leader": "leader: Tricia Thompson",
     "phone": "phone: 303-695-1111",
     "age": "age: 15-18"
   },
@@ -105,7 +105,7 @@ export const results = [
     "description": "A place for teen girls to meet & greet",
     "location": 'location: 4705 Montview Blvd, Denver, CO 80207',
     "season": "season: all year long",
-    "Leader": "leader: Kathy Ford",
+    "leader": "leader: Kathy Ford",
     "phone": "phone: 720-589-2145",
     "age": "age: 15-19"
   },
@@ -116,7 +116,7 @@ export const results = [
     "description": "A place for teen girls to meet & greet",
     "location": 'location: 14100 E Jewell Ave #30, Aurora, CO 80012',
     "season": "season: all year long",
-    "Leader": "leader: Kathy Ford",
+    "leader": "leader: Kathy Ford",
     "phone": "phone: 720-589-2145",
     "age": "age: 15-19"
   },
@@ -127,7 +127,7 @@ export const results = [
     "description": "All teens welcom",
     "location": 'location: 3549 Navajo St, Denver, CO 80211',
     "season": "season: all year long",
-    "Leader": "leader: Gesalyn Jones",
+    "leader": "leader: Gesalyn Jones",
     "phone": "phone: 720-589-2145",
     "age": "age: 15-19"
   },
@@ -138,7 +138,7 @@ export const results = [
     "description": "A place for teen girls to meet & greet",
     "location": 'location: 1007 York St, Denver, CO 80206',
     "season": "season: summer",
-    "Leader": "leasder: Lucy Callo",
+    "leader": "leasder: Lucy Callo",
     "phone": "phone: 720-555-3456",
     "age": "age: 16"
   },
@@ -149,7 +149,7 @@ export const results = [
     "description": "Teens learn to cultivate plants",
     "location": 'location: 1007 York St, Denver, CO 80206',
     "season": "season: summer",
-    "Leader": "leader: Don Mickels",
+    "leader": "leader: Don Mickels",
     "phone": "phone: 720-555-3456",
     "age": "age: 16"
   },
@@ -160,7 +160,7 @@ export const results = [
     "description": "A place for teen girls to meet & greet",
     "location": 'location: 570 W 44th Ave, Denver, CO 80216',
     "season": "sesaon: all-year long",
-    "Leader": "leader: DJ Jefferson",
+    "leader": "leader: DJ Jefferson",
     "phone": "phone: 970-9887-6543",
     "age": 16
   },
@@ -171,7 +171,7 @@ export const results = [
     "description": "A place for teen girls to meet & greet",
     "location": 'location: 570 W 44th Ave, Denver, CO 80216',
     "season": "season: all-year-long",
-    "Leader": "leader: Amy Carter",
+    "leader": "leader: Amy Carter",
     "phone": "phone: 818-234-5678",
     "age": "age: 16"
   },
@@ -182,7 +182,7 @@ export const results = [
     "description": "A place for teen girls to meet & greet",
     "location": 'location: 2000 Elitch Cir, Denver, CO 80204',
     "season": "season: summer",
-    "Leader": "leader: Darrin Martin",
+    "leader": "leader: Darrin Martin",
     "phone": "phone: 720-759-4532",
     "age": "age: 16"
   },
@@ -193,7 +193,7 @@ export const results = [
     "description": "A place for teen girls to meet & greet",
     "location": 'location: 3516 Olive St., Denver, CO 80207',
     "season": "season: summer",
-    "Leader": "leader: Josh Gage",
+    "leader": "leader: Josh Gage",
     "phone": "phone: 720-329-8876",
     "age": "age: 16"
   },
@@ -204,7 +204,7 @@ export const results = [
     "description": "A place for teen girls to meet & greet",
     "location": 'location: Denver, CO',
     "season": "season: all-year-long",
-    "Leader": "leader: Lala Tennivoldy",
+    "leader": "leader: Lala Tennivoldy",
     "phone": "phone: 720-977-6543",
     "age": "age: 16"
   },
@@ -215,7 +215,7 @@ export const results = [
     "description": "A place for teen girls to meet & greet",
     "location": 'location: 9651 M.L.K. Jr Blvd, Denver, CO 80238',
     "season": "season: all-year-long",
-    "Leader": "leader: Christee Johnson",
+    "leader": "leader: Christee Johnson",
     "phone": "phone: 303-377-9009",
     "age": "age: 16"
   },
@@ -226,7 +226,7 @@ export const results = [
     "description": "A place for teen girls to meet & greet",
     "location": 'location: University of Colorado Boulder, CO 80309',
     "season": "season: summer",
-    "Leader": "leader: Britta Narrington",
+    "leader": "leader: Britta Narrington",
     "phone": "phone: 720-532-31765",
     "age": "age: 16"
   },
@@ -237,7 +237,7 @@ export const results = [
     "description": "Baking",
     "location": 'location: 121 Clayton Lane Denver, Colorado 80206',
     "season": "season: summer",
-    "Leader": "leader: Ratcliffe Suvasothy",
+    "leader": "leader: Ratcliffe Suvasothy",
     "phone": "phone: 303-455-2176",
     "age": "age: 16"
   },
@@ -248,7 +248,7 @@ export const results = [
     "description": "Cooking with Giada DiLaurentis",
     "location": 'location: 3215 Zuni St., Denver, CO 80211',
     "season": "season: summer",
-    "Leader": "leader: Ratcliffe Suvasothy",
+    "leader": "leader: Ratcliffe Suvasothy",
     "phone": "phone: 303-455-2176",
     "age": "age: 16"
   },
@@ -259,7 +259,7 @@ export const results = [
     "description": "Come and work at the hospital brightening someone's day!",
     "location": 'location: Denver, CO',
     "season": "season: summer",
-    "Leader": "leader: Liz Smith",
+    "leader": "leader: Liz Smith",
     "phone": "phone: 303-375-4567",
     "age": "age: 16"
   },
@@ -270,7 +270,7 @@ export const results = [
     "description": "Many rewarding volunteer opportunities to choose from",
     "location": 'location: 2660 Larimer Street Denver, CO 80205',
     "season": "season: summer",
-    "Leader": "leader: Kim Villareal",
+    "leader": "leader: Kim Villareal",
     "phone": "phone: 303-375-4567",
     "age": "age: 16"
   },
@@ -281,7 +281,7 @@ export const results = [
     "description": "A place for teen girls to meet & greet",
     "location": 'location: 3245 Eliot St, Denver, CO 80211',
     "season": "season: spring and summer",
-    "Leader": "leader: Luke Jamison",
+    "leader": "leader: Luke Jamison",
     "phone": "phone: 720-234-3456",
     "age": "age: 16"
   },
@@ -292,7 +292,7 @@ export const results = [
     "description": "A place where Thespians gather",
     "location": 'location: 1101 13th St, Denver, CO 80204',
     "season": "season: all-year-long",
-    "Leader": "leader: John Marsh",
+    "leader": "leader: John Marsh",
     "phone": "720-550-9768",
     "age": "age: 16"
   },
@@ -303,7 +303,7 @@ export const results = [
     "description": "A place for teen girls to meet & greet",
     "location": 'location: 1101 13th St, Denver, CO 80204',
     "season": "season: all-year-long",
-    "Leader": "leader: John Marsh",
+    "leader": "leader: John Marsh",
     "phone": "phone: 720-550-9768",
     "age": "age: 16"
   }

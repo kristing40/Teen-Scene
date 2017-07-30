@@ -3,7 +3,6 @@ import ActivityCardList from '../../components/ActivityCardList/ActivityCardList
 
 
 const mapStateToProps = (state) => {
-
   return state
 }
 
