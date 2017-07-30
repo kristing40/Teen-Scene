@@ -7,27 +7,27 @@ import { Link, Router, Route, Switch } from 'react-router-dom';
 class AddEvent extends Component  {
   constructor(props) {
     super(props)
-    // this.state = {
-    //   addNewEvent:'',
-    // }
+    console.log(props);
+    this.handleAddEventChange = this.handleAddEventChange.bind(this)
+    this.handleAddEventSubmit = this.handleAddEventSubmit.bind(this)
   }
 
-// this.handleAddEventChange = this.handleAddEventChange.bind(this)
-// this.handleAddEventSubmit = this.handleAddEventSubmit.bind(this)
 
- // handleAddEventChange(e) {
- //   this.setState({addNewEvent: e.target.value})
- // }
+ handleAddEventChange(e, userInputField) {
+   this.props
+  //  this.setState({addNewEvent: e.target.value})
+ }
 
- // handleAddEventSubmit(e) {
- //   e.preventDefault();
- //   const { addNewEvent } =  this.state
- //
- //   this.props.getAddedEvent(addNewEvent)
- //
- //   this.setState({addNewEvent: ''})
- //
- // }
+ handleAddEventSubmit(e) {
+   e.preventDefault();
+  //  console.log(e);
+   const { addNewEvent } =  this.state
+
+   this.props.getAddedEvent(addNewEvent)
+
+   this.setState({addNewEvent: ''})
+
+ }
 
   render () {
 
@@ -48,9 +48,13 @@ class AddEvent extends Component  {
 
           <input id="userInputField" className="add-activity-field" value={this.props.addNewEmail} type="text" placeholder="Enter an Email Address" onChange={(e) => this.handleAddEventChange(e, 'userInputField')}/>
 
-          <button className="add-event-btn" onClick={(e) => this.handleAddEventSubmit(e)}>Submit</button>
+          <div className="add-event-btns">
 
-          <button className="home-btn" onClick={(e) => this.handleAddEventSubmit(e)}>Exit</button>
+            <input type="submit" value="Submit" className="add-event-btn" onClick={(e) => this.handleAddEventSubmit(e)}/>
+
+            <input value="Cancel" className="home-btn"/>
+
+          </div>
         </form>
     </div>
   )

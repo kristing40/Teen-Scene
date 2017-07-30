@@ -6,14 +6,15 @@ import { fetchAddEvent } from '../../actions/actions';
 const mapStateToProps = (state) => {
 
   return {
-    addAnEvent: state.addEventReducer
+    addNewEvent: state.addEventReducer
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
 
   return {
-    getAddedEvent: (event) => dispatch(fetchAddEvent(event))
+
+    getAddedEvent: (addNewEvent) => dispatch(fetchAddEvent(addNewEvent))
   }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(AddEvent)
