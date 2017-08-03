@@ -6,7 +6,8 @@ import { addEventReducer } from '../AddEventReducer/AddEventReducer';
 import { deleteActivityReducer } from '../DeleteActivityReducer/DeleteActivityReducer';
 import { addToFavoritesReducer } from '../AddToFavoritesReducer/AddToFavoritesReducer';
 import { deleteFromFavoritesReducer } from '../DeleteFromFavoritesReducer/DeleteFromFavoritesReducer';
-import { appReducer } from '../AppReducer/AppReducer'
+import { appReducer } from '../AppReducer/AppReducer';
+import {reducer as formReducer } from 'redux-form';
 
 
 export const history = createHistory();
@@ -19,5 +20,6 @@ export const rootReducer = combineReducers ({
   deleteActivityReducer,
   addToFavoritesReducer,
   deleteFromFavoritesReducer,
-  appReducer
+  appReducer,
+  form: formReducer
 });

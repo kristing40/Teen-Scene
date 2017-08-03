@@ -26,7 +26,7 @@ export default class App extends Component {
             <Route exact path='/' component={Header}/>
             <Route exact path='/' component={ActivityCardListContainer}/>
             <Route exact path='/addEvent' render={() => {
-             return <AddEvent {...this.props} type='AddEvent'/>
+             return <AddEvent  type='AddEvent'/>
            }}/>
         </main>
       );
