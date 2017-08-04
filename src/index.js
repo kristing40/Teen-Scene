@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import AppContainer from './containers/AppContainer/AppContainer';
 import { rootReducer, history, routerConnected } from './reducers/RootReducer/rootReducer';
-import { createStore, applyMiddleware } from 'redux'
+import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';

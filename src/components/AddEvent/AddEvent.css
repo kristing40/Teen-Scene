@@ -5,9 +5,6 @@
 body {
   background-color: rgba(5, 5, 5, 0.98);
 }
-/*.add-new-activity-title {
-  width: 100%;
-}*/
 
 .add-new-activity-form {
   display: flex;
@@ -26,6 +23,18 @@ input {
   margin-bottom: 10px;
 }
 
+textarea {
+  background-color: #C0C0C0;
+  color: #fff;
+  font-size: 20px;
+}
+
+textarea::placeholder {
+  font-size: 17px;
+  padding-left: 10px 18px;
+  color: #fff;
+}
+
 input::placeholder {
   color: #DBDBDB;
 }
@@ -35,6 +44,10 @@ input::placeholder {
   border-bottom: 1px solid gray;
   border-radius: 0;
   height: 50px;
+}
+
+.txt-area {
+  margin-left: 15px;
 }
 
 .add-event-btns {
