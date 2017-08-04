@@ -5,7 +5,7 @@ import { Link, Router, Route, Switch } from 'react-router-dom';
 import { Field, reduxForm } from 'redux-form';
 
 let AddEvent = props => {
-  const { handleSubmit, pristine, submitting, reset } = props;
+  const { handleSubmit, pristine, onSubmit, reset, onChange, submitting } = props;
 
   return (
     <div className="add-new-activity-form">
@@ -37,7 +37,7 @@ let AddEvent = props => {
           </div>
 
           <div className="add-event-btns">
-            <button type="submit" className="add-event-btn" disabled={pristine || submitting} >Submit</button>
+            <button type="submit" className="add-event-btn" disabled={pristine || submitting } onSubmit={onSubmit}>Submit</button>
             <button type="submit" className="home-btn" disabled={pristine || submitting} onClick={reset}>Clear Form</button>
           </div>
         </form>

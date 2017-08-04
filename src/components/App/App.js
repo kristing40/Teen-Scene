@@ -4,20 +4,11 @@ import AppCss from './App.css';
 import ActivityCardListContainer from '../../containers/ActivityCardListContainer/ActivityCardListContainer';
 import { Link, Router, Route, Switch } from 'react-router-dom';
 import AddEvent from '../AddEvent/AddEvent'
-// import { results } from '../../dataSet/myData';
 
 
 export default class App extends Component {
   constructor(props) {
     super(props)
-  }
-
-  componentDidMount() {
-    //call actionCreator
-    // this.props.getUpdatedActivities(results)
-    // console.log(results);
-    // get the data
-    // reducer -> function that updates props
   }
 
     render() {

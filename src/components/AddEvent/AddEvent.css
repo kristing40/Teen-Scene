@@ -24,14 +24,17 @@ input {
 }
 
 textarea {
-  background-color: blue;
+  background-color: #C0C0C0;
+  color: #fff;
+  font-size: 20px;
 }
+
 textarea::placeholder {
   font-size: 17px;
   padding-left: 10px 18px;
+  color: #fff;
 }
 
-textarea::placeholder,
 input::placeholder {
   color: #DBDBDB;
 }
