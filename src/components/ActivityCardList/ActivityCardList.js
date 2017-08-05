@@ -6,7 +6,6 @@ import { results } from '../../dataSet/myData';
 export default class ActivityCardList extends Component{
 constructor (props) {
   super(props)
-  console.log(props);
 }
 
   cards() {

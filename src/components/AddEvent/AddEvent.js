@@ -5,12 +5,13 @@ import { Link, Router, Route, Switch } from 'react-router-dom';
 import { Field, reduxForm } from 'redux-form';
 
 let AddEvent = props => {
-  const { handleSubmit, pristine, onSubmit, reset, onChange, submitting } = props;
+  const { handleSubmit, pristine, onSubmit, reset, onChange, submitting, values } = props;
 
+  console.log(props);
   return (
     <div className="add-new-activity-form">
       <AddEventTitle/>
-        <form onSubmit={ handleSubmit }>
+        <form onSubmit={ onSubmit }>
           <label>Add a new activity</label>
           <div>
             <Field name="activity" className="add-activity-field" placeholder="Enter name of activity" component="input" type="text"/>
