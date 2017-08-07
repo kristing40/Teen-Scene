@@ -1,7 +1,6 @@
 import 'whatwg-fetch';
 
 export const  fetchActivitySelected = (searchParam) => {
-  console.log("WE MADE IT!!!!!!!!!");
   return {type: 'SELECT_NEW_ACTIVITY', searchParam}
 }
 
@@ -11,6 +10,10 @@ export const fetchActivityDeleted = (id) => {
 
 export const fetchActivityAddedToFavorites = (id) => {
   return {type: 'ADD_TO_FAVORITES', id}
+}
+
+export const toggleFavoritedCard = (bool) => {
+  return {type: 'FAVORITED', favorited: bool}
 }
 
 export const  fetchActivityDeletedFromFavorites = (id) => {

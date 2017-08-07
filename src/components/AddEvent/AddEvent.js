@@ -7,12 +7,17 @@ import { Field, reduxForm } from 'redux-form';
 let AddEvent = props => {
   const { handleSubmit, pristine, onSubmit, reset, onChange, submitting, values } = props;
 
-  console.log(props);
   return (
     <div className="add-new-activity-form">
       <AddEventTitle/>
         <form onSubmit={ onSubmit }>
-          <label>Add a new activity</label>
+           <div className="back-btn-container">
+             <Link to='/' className="back-btn">Back</Link>
+           </div>
+          <div>
+            <Field name="type" className="add-activity-field" placeholder="Enter type of activity" component="input" type="text"/>
+          </div>
+
           <div>
             <Field name="activity" className="add-activity-field" placeholder="Enter name of activity" component="input" type="text"/>
           </div>

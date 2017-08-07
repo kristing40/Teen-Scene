@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Header from '../Header/Header';
 import AppCss from './App.css';
+import Header from '../Header/Header';
 import ActivityCardListContainer from '../../containers/ActivityCardListContainer/ActivityCardListContainer';
+import AddEvent from '../AddEvent/AddEvent';
+import Search from '../Search/Search'
 import { Link, Router, Route, Switch } from 'react-router-dom';
-import AddEvent from '../AddEvent/AddEvent'
-
 
 export default class App extends Component {
   constructor(props) {

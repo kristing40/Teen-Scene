@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
 import css from './ActivityCard.css';
-// import ActivityMap from '../ActivityMap/ActivityMap'
 
 
 const ActivityCard = (props) => {
-const { activity, location, description, season, leader, phone, age } = props
+const { activity, location, description, season, leader, phone, age, favorited, getFavorited } = props
+
+const favBtn = () => {
+  return favorited === true ? 'like-btn' : 'unlike-btn'
+}
+
+const handleFavClick = () => {
+  getFavorited(!favorited);
+}
 
   return (
     <div className="activity-card-container">
@@ -17,8 +24,8 @@ const { activity, location, description, season, leader, phone, age } = props
           <p className="activity-leader">{props.leader}</p>
           <p className="activity-phone">{props.phone}</p>
           <p className="activity-age">{props.age}</p>
-          <div className="map">
-            {/* <ActivityMap/> */}
+          <div className="like-btn-container">
+            <button className={favBtn()} onClick={(e) => handleFavClick()}></button>
           </div>
         </div>
       </div>

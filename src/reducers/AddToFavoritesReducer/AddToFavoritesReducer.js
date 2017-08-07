@@ -1,6 +1,7 @@
 export const initialState = {
   id: '',
-  favoritesArray: []
+  favoritesArray: [],
+  favorited: false
 }
 
 export const addToFavoritesReducer = (state = initialState, action) => {
@@ -8,7 +9,12 @@ export const addToFavoritesReducer = (state = initialState, action) => {
   case 'ADD_TO_FAVORITES':
     return Object.assign({}, state, {
       id: action.id,
-      favoritesArray: action.favoritesArray
+      favoritesArray: action.favoritesArray,
+    })
+  case 'FAVORITED':
+    return Object.assign({}, state, {
+      id: action.id,
+      favorited: action.favorited
     })
   default: return state;
   }

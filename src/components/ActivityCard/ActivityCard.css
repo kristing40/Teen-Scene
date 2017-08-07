@@ -13,25 +13,55 @@
   padding: 20px;
 }
 
-.fav-btn,
-.unfav-btn,
+.like-btn,
+.unlike-btn,
 .deleteCard-btn {
+  height: 30px;
+  width: 30px;
+}
+
+.like-btn {
+  background: url(./images/upvote.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-style: none;
+}
+
+.like-btn::before{
+  color: #fff;
+  content: "Like";
+  display: block;
+  font-size: 55%;
+  margin-top: 39px;
+  text-align: left;
+  width: 60px;
+}
+
+.unlike-btn {
+  background: url(./images/thumbs-down.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-style: none;
+}
+
+.unlike-btn::after{
+  color: #fff;
+  content: "UnLike";
+  display: block;
+  font-size: 55%;
+  margin-top: 39px;
+  margin-left: -15px;
+  /*transform: scaleY(-1);*/
+  width: 60px;
+}
+
+
+.like-btn-container {
   height: 40px;
   width: 40px;
+
 }
 
-.fav-btn {
-  background-image: url(./images/like.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.unfav-btn {
-  background-image: url(./images/like.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.deleteCard-btn {
-
+.like-title {
+  color: #fff;
 }
