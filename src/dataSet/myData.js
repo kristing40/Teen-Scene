@@ -306,5 +306,38 @@ export const results = [
     "leader": "leader: John Marsh",
     "phone": "phone: 720-550-9768",
     "age": "age: 16"
+  },
+  {
+    "id": 29,
+    "type": "Art",
+    "activity": "Volunteering at MCA Denver",
+    "description": "Come and volunteer with our Teen Program",
+    "location": 'location: 2631 Delegany St, Denver, CO 80112',
+    "season": "season: all-year-long",
+    "leader": "leader: Tasley Spencer",
+    "phone": "phone: 303-987-0453",
+    "age": "age: 16-18"
+  },
+  {
+    "id": 30,
+    "type": "Flying Lessons",
+    "activity": "Come learn to fly a plane",
+    "description": "Fly with one of the Tuskeegee Airmen",
+    "location": 'location: Wrigley Airfield at Lowry, Denver CO 80304',
+    "season": "season: all-year-long",
+    "leader": "leader: Clifford Jackson",
+    "phone": "phone: 303-755-5250",
+    "age": "age: 16-18"
+  },
+  {
+    "id": 31,
+    "type": "Cooking",
+    "activity": "Cake making and decorating",
+    "description": "Make cakes for charity",
+    "location": 'location: 1717 Emerson St., Denver, CO 80112',
+    "season": "season: all-year-long",
+    "leader": "leader: Shirley Pipkin",
+    "phone": "phone: 720-695-2876",
+    "age": "age: 16-18"
   }
 ]
